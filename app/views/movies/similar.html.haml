@@ -1,0 +1,13 @@
+%h1 Similar Movies by Director
+
+%table
+  %thead
+    %tr
+      %th= 'Movie Title'
+      %th=  'Director'
+  %tbody
+    - @movies.each do |movie|
+      %tr 
+        %td= movie.title
+        %td= movie.director
+
